@@ -337,10 +337,26 @@ footer a {
     width: auto;
     border: 5px solid #a1a7ce; 
 }
+
+#g1,
+#g2,
+#g3 {
+    filter: saturate(15%);
+    transition: 0.4s;
+}
+
+#g1:hover,
+#g2:hover,
+#g3:hover {
+    filter: saturate(100%);
+
+}
+
 .FeaturedTitle {
     border: none;
-    height: 100vh;
-    width: auto;
+    height: auto;
+    margin-bottom: 15px;
+    width: 84vw;
 }
 .grid-container {
     display: grid;
@@ -428,7 +444,7 @@ footer ul li a.active {
     transform: translateX(-49.5vh) translateY(-14vh);
 }
 
-section input {
+#text-field {
     height: 10vh;
     width: 69vw;
     border: none;
@@ -453,5 +469,5 @@ section input {
     border-radius: 40px;
     height: 8vh;
     border: none;
-    transform: translatey(-2.2vh) translateX(16.5vw);
+    transform: translatey(-2.1vh) translateX(16.5vw);
 }
