@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lilita One', sans-serif;
+}
+body {
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+}
+#header {
+    position: fixed;
+    background-color: rgba(7, 11, 35, .5);
+    height: 15vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-size: 2em;
+    color: #fff;
+}
+header img {
+    height: 20vh;
+    transform: translateX(-90px);
+}
+#header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+#header ul li a:hover,
+#header ul li a.active {
+    background: #182474;
+    color: #fff;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+}
+section img {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* fill */
+    object-fit: fill;
+    pointer-events: none;
+}
+#chuckle-text,
+#starbound-text,
+#stardew-text,
+#eastward-text {
+    position: absolute;
+    font-size: 1.5em;
+}
+
+    
+#chuckle-text{
+    width: 60vw;
+    color: white;
+    transform: translateX(-67vh) translateY(50vh);
+    top: 0;
+    text-align: left;
+}
+
+#starbound-text{
+    color: #e7e7e7;
+    width: 70vw;
+    transform: translateX(23vh) translateY(7vh);
+    text-align: right;
+}
+
+#stardew-text{
+    color: #945f29;
+    width: 60vw;
+    transform: translateX(-31vh) translateY(28vh);
+    text-align: left;
+}
+#eastward-text{
+    color: #121212;
+    width: 60vw;
+    word-spacing: 2px;
+    transform: translateX(21vh) translateY(4vh);
+    text-align: right;
+}
+
+#par-1{background-color: #206cbc;}
+section #text {
+    position: absolute;
+    color: var(--text_color);
+    font-size: 10vw;
+    text-align: center;
+    line-height: .55em;
+    font-family: 'Rancho', cursive;
+    transform: translatey(-25vh) translateX(-40vh);
+}
+section #text span {
+    font-size: .20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 30px;
+    background: #fff;
+    color: #ee7a32;
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    border: 6px solid #ee7a32;
+    transform: translatey(150px) translateX(-16vw);
+}
+
+#second-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ee7a32;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    border: 6px solid white;
+    transform: translatey(150px) translateX(-45vw);
+}
+
+#starbound-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 30px;
+    background: #96a5e5;
+    color: #e7e7e7;
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    border: 6px solid #e7e7e7;
+    transform: translatey(150px) translateX(39vw);
+}
+
+#stardew-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 30px;
+    background: #d7a437;
+    color: #3e3118;
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    border: 6px solid #3e3118;
+    transform: translatey(45vh) translateX(-39vw);
+}
+
+#eastward-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 30px;
+    background:  #111111;
+    color:  #fbf183;
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    border: 6px solid  #fbf183;
+    transform: translatey(130px) translateX(34.5vw);
+}
+
+
+#btn:hover,
+#second-button:hover,
+#starbound-button:hover,
+#stardew-button:hover {
+    background: #d8d8d8;
+}
+#eastward-button:hover {
+    background: #d8d8d8;
+}
+.sec {
+    position: relative;
+    padding: 100px;
+    background: #182474;
+}
+.sec h2 {
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.sec p {
+    font-size: 1em;
+    color: #fff;
+}
+footer {
+    position: relative;
+    padding: 0px 100px;
+    background: #182474;
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#chuckle_title_logo{
+    object-fit: fill;
+    width: 180vh;
+    height: auto;
+    transform: translateX(1vh) translateY(10vh);
+}
+
+#starbound_title_logo{
+    object-fit: fill;
+    width: 170vh;
+    height: 60vh;
+    transform: translateX(17vw) translateY(8vh);
+}
+#stardew_title_logo{
+    width: 160vh;
+    height: 90vh;
+    transform: translateX(-2.5vw) translateY(-3vh);
+}
+
+#eastward_title_logo{
+    width: 130vh;
+    height: auto;
+    transform: translateX(30vw) translateY(10vh);
+}
+
+#bubble-1,
+#bubble-2,
+#bubble-3,
+#bubble-4,
+#bubble-5,
+#bubble-6 {
+    object-fit: none;
+}
+/* 
+    x = left/right
+    y = up/down
+ */
+#bubble-1 {
+    transform: translateX(82vh) translateY(45vh);
+}
+#bubble-2 {
+    transform: translateX(-10vh) translateY(20vh) scale(1.2);
+}
+#bubble-3 {
+    transform: translateX(-40vh) translateY(-37vh);
+}
+#bubble-4 {
+    transform: translateX(25vh) translateY(50vh) scale(.6);
+}
+#bubble-5 {
+    transform: translateX(-100vh) translateY(15vh);
+}
+#bubble-6 {
+    transform: translateX(45vh) translateY(10vh);
+}
+
+.grid-container img {
+    height: 50vh;
+    width: auto;
+    border: 5px solid #a1a7ce; 
+}
+.FeaturedTitle {
+    border: none;
+    height: 100vh;
+    width: auto;
+}
+.grid-container {
+    display: grid;
+    gap: 1px 1px;
+    grid-template-columns: auto auto auto;
+  }
+
+  header img {
+    height: 20vh;
+    transform: translateX(-90px);
+}
+
+
+
+footer {
+    background-color: rgba(7, 11, 35, .5);
+    top: 45.64vh;
+    height: 8vh;
+    left: 0;
+    width: 100%;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-size: 1.2em;
+    color: #fff;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+footer ul li a:hover,
+footer ul li a.active {
+    background: #182474;
+    color: #fff;
+}
+.foothehe li {
+    margin: 2px;
+}
