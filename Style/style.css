@@ -7,14 +7,14 @@
 body {
     overflow-x: hidden;
     background: #fff;
-    min-height: 100vh;
+    min-height: 100vh; 
     overscroll-behavior-y: none;
     overscroll-behavior-x: none;
 }
 #header {
     position: fixed;
     background-color: rgba(7, 11, 35, .5);
-    height: 15vh;
+    height: 13vh;
     top: 0;
     left: 0;
     width: 100%;
@@ -88,9 +88,9 @@ section img {
 
     
 #chuckle-text{
-    width: 60vw;
+    width: 65vw;
     color: white;
-    transform: translateX(-67vh) translateY(50vh);
+    transform: translateX(-32vw) translateY(50vh);
     top: 0;
     text-align: left;
 }
@@ -98,34 +98,28 @@ section img {
 #starbound-text{
     color: #e7e7e7;
     width: 70vw;
-    transform: translateX(23vh) translateY(7vh);
+    transform: translateX(11vw) translateY(7vh);
     text-align: right;
 }
 
 #stardew-text{
     color: #945f29;
-    width: 60vw;
-    transform: translateX(-31vh) translateY(28vh);
+    width: 61vw;
+    transform: translateX(-14vw) translateY(28vh);
     text-align: left;
 }
 #eastward-text{
     color: #121212;
-    width: 60vw;
+    width: 58vw;
     word-spacing: 2px;
-    transform: translateX(21vh) translateY(4vh);
+    transform: translateX(10vw) translateY(4vh);
     text-align: right;
 }
 
-#par-1{background-color: #206cbc;}
-section #text {
-    position: absolute;
-    color: var(--text_color);
-    font-size: 10vw;
-    text-align: center;
-    line-height: .55em;
-    font-family: 'Rancho', cursive;
-    transform: translatey(-25vh) translateX(-40vh);
+#par-1{
+    background-color: #206cbc;
 }
+
 section #text span {
     font-size: .20em;
     letter-spacing: 2px;
@@ -185,7 +179,7 @@ section #text span {
     border-radius: 40px;
     border: 6px solid #3e3118;
     z-index: 100;
-    transform: translatey(45vh) translateX(-39vw);
+    transform: translatey(44vh) translateX(-39vw);
 }
 
 #eastward-button {
@@ -239,14 +233,14 @@ footer a {
 
 #chuckle_title_logo{
     object-fit: fill;
-    width: 180vh;
+    width: 92vw;
     height: auto;
-    transform: translateX(1vh) translateY(10vh);
+    transform: translateX(0.5vw) translateY(9vh);
 }
 
 #starbound_title_logo{
     object-fit: fill;
-    width: 170vh;
+    width: 80vw;
     height: 60vh;
     transform: translateX(17vw) translateY(8vh);
 }
@@ -255,16 +249,16 @@ footer a {
     position: absolute;
     height: 40vh;
     width: auto;
-    transform: translateX(3vh) translateY(55vh);
+    transform: translateX(1.5vw) translateY(55vh);
 }
 #person-2{
     position: absolute;
     height: 35vh;
     width: auto;
-    transform: translateX(22vh) translateY(60vh);
+    transform: translateX(11vw) translateY(60vh);
 }
 #stardew_title_logo{
-    width: 160vh;
+    width: 77vw;
     height: 90vh;
     transform: translateX(-2.5vw) translateY(-3vh);
 }
@@ -273,17 +267,17 @@ footer a {
     position: absolute;
     height: 50vh;
     width: auto;
-    transform: translateX(150vh) translateY(54vh);
+    transform: translateX(70vw) translateY(54vh);
 }
 #farmer-1{
     position: absolute;
     height: 45vh;
     width: auto;
-    transform: translateX(130vh) translateY(60vh);
+    transform: translateX(62.5vw) translateY(60vh);
 }
 
 #eastward_title_logo{
-    width: 130vh;
+    width: 60vw;
     height: auto;
     transform: translateX(30vw) translateY(10vh);
 }
@@ -292,13 +286,13 @@ footer a {
     position: absolute;
     height: 70vh;
     width: auto;
-    transform: translateX(2vh) translateY(33vh);
+    transform: translateX(1vw) translateY(33vh);
 }
 #girl{
     position: absolute;
     height: 50vh;
     width: auto;
-    transform: translateX(32vh) translateY(52.5vh);
+    transform: translateX(15.5vw) translateY(52.5vh);
 }
 
 #bubble-1,
@@ -314,22 +308,23 @@ footer a {
     y = up/down
  */
 #bubble-1 {
-    transform: translateX(82vh) translateY(45vh);
+    transform: translateX(39vw) translateY(45vh);
 }
 #bubble-2 {
-    transform: translateX(-10vh) translateY(20vh) scale(1.2);
+    transform: translateX(-4.7vw) translateY(20vh) scale(1.2);
 }
 #bubble-3 {
-    transform: translateX(-40vh) translateY(-37vh);
+    transform: translateX(-18vw) translateY(-37vh);
+
 }
 #bubble-4 {
-    transform: translateX(25vh) translateY(50vh) scale(.6);
+    transform: translateX(12vw) translateY(50vh) scale(.6);
 }
 #bubble-5 {
-    transform: translateX(-100vh) translateY(15vh);
+    transform: translateX(-47.5vw) translateY(15vh);
 }
 #bubble-6 {
-    transform: translateX(45vh) translateY(10vh);
+    transform: translateX(21.5vw) translateY(10vh);
 }
 
 .grid-container img {
@@ -421,7 +416,7 @@ footer ul li a.active {
     object-fit: contain;
     position: absolute;
     height: 110vh;
-    transform: translateX(50vh) translateY(17vh);
+    transform: translateX(23vw) translateY(17vh);
 }
 
 #kup,
@@ -435,13 +430,13 @@ footer ul li a.active {
 
 #kup {
     word-spacing: 4px;
-    transform: translateX(-62vh) translateY(-25vh);
+    transform: translateX(-29.5vw) translateY(-25vh);
 }
 
 #cup {
     word-spacing: 8px;
     width: auto;
-    transform: translateX(-49.5vh) translateY(-14vh);
+    transform: translateX(-24vw) translateY(-14vh);
 }
 
 #text-field {
@@ -463,6 +458,7 @@ footer ul li a.active {
     padding: 12px 30px;
     background: #82b6cd;
     color: #fff;
+    width: 15vw;
     font-size: 2em;
     font-weight: 500;
     letter-spacing: 2px;
