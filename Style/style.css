@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 1000;
     font-size: 2em;
     color: #fff;
 }
@@ -184,6 +184,7 @@ section #text span {
     letter-spacing: 2px;
     border-radius: 40px;
     border: 6px solid #3e3118;
+    z-index: 100;
     transform: translatey(45vh) translateX(-39vw);
 }
 
@@ -205,7 +206,8 @@ section #text span {
 #btn:hover,
 #second-button:hover,
 #starbound-button:hover,
-#stardew-button:hover {
+#stardew-button:hover,
+#submit-button:hover {
     background: #d8d8d8;
 }
 #eastward-button:hover {
@@ -248,16 +250,55 @@ footer a {
     height: 60vh;
     transform: translateX(17vw) translateY(8vh);
 }
+
+#person-1{
+    position: absolute;
+    height: 40vh;
+    width: auto;
+    transform: translateX(3vh) translateY(55vh);
+}
+#person-2{
+    position: absolute;
+    height: 35vh;
+    width: auto;
+    transform: translateX(22vh) translateY(60vh);
+}
 #stardew_title_logo{
     width: 160vh;
     height: 90vh;
     transform: translateX(-2.5vw) translateY(-3vh);
 }
 
+#farmer-2{
+    position: absolute;
+    height: 50vh;
+    width: auto;
+    transform: translateX(150vh) translateY(54vh);
+}
+#farmer-1{
+    position: absolute;
+    height: 45vh;
+    width: auto;
+    transform: translateX(130vh) translateY(60vh);
+}
+
 #eastward_title_logo{
     width: 130vh;
     height: auto;
     transform: translateX(30vw) translateY(10vh);
+}
+
+#guy{
+    position: absolute;
+    height: 70vh;
+    width: auto;
+    transform: translateX(2vh) translateY(33vh);
+}
+#girl{
+    position: absolute;
+    height: 50vh;
+    width: auto;
+    transform: translateX(32vh) translateY(52.5vh);
 }
 
 #bubble-1,
@@ -316,7 +357,7 @@ footer a {
 
 footer {
     background-color: rgba(7, 11, 35, .5);
-    top: 45.64vh;
+    top: 46.64vh;
     height: 8vh;
     left: 0;
     width: 100%;
@@ -351,4 +392,66 @@ footer ul li a.active {
 }
 .foothehe li {
     margin: 2px;
+}
+
+#bottom-page{
+    overflow: clip;
+    overscroll-behavior: none;
+    margin: 0;
+    padding: 0;
+    height: 101vh;
+}
+#footerfish {
+    object-fit: contain;
+    position: absolute;
+    height: 110vh;
+    transform: translateX(50vh) translateY(17vh);
+}
+
+#kup,
+#cup {
+    color: white;
+    position: absolute;
+    font-size: 4em;
+    width: 30vw;
+    letter-spacing: 1.5px;
+}
+
+#kup {
+    word-spacing: 4px;
+    transform: translateX(-62vh) translateY(-25vh);
+}
+
+#cup {
+    word-spacing: 8px;
+    width: auto;
+    transform: translateX(-49.5vh) translateY(-14vh);
+}
+
+section input {
+    height: 10vh;
+    width: 69vw;
+    border: none;
+    font-size: 3em;
+    padding: 30px;
+    border-radius: 40px;
+    position: absolute;
+    object-fit: contain;
+    transform: translateX(-10vw) translateY(-1vw);
+}
+
+#submit-button {
+    position: absolute;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 30px;
+    background: #82b6cd;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    height: 8vh;
+    border: none;
+    transform: translatey(-2.2vh) translateX(16.5vw);
 }
